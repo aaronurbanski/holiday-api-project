@@ -1,0 +1,7 @@
+#header {
+  text-shadow: 1px 1px 3px black;
+  background-image: url('img/world_banner.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 50% 50%;
+}
