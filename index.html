@@ -221,10 +221,8 @@
             </select>
           </p>
           <p id="selectDate">
-            <input type="radio" value="year" name="dateBtn" id="yearBtn" checked />
-            <label for="yearBtn">Year</label>
-            <input type="radio" value="day" name="dateBtn" id="dateBtn" />
-            <label for="dateBtn">Day</label>
+            <input type="date" name="holidayDate" id="holidayDate" />
+            <label for="holidayDate">Date</label>
           </p>
         </div>
         <!-- /.col-lg-3 -->
@@ -234,9 +232,24 @@
           <!--
             let col = document.createElement("div");
             col.className = "col-lg-4 col-md-6 mb-4";
+            let card = document.createElement("div");
+            card.className = "card h-100";
             flag = document.createElement("img");
             flag.className = "card-img-top";
-            flag.src = ``
+            flag.src = `https://flagcdn.com/64x48/${country}.png;
+            cardImg.appendChild(flag);
+            let cardBody = document.createElement("div");
+            cardBody.className = "card-body";
+            let cardTitle = document.createElement("h4");
+            cardTitle.className = "card-title";
+            cardTitle.innerText = holiday;
+            cardBody.appendChild(cardTitle);
+            let cardText = document.createElement(p);
+            cardText.className = "card-text";
+            cardText.innerText = holidayInfo;
+            cardBody.appendChild(cardText);
+            card.appendChild(cardBody);
+            
 
             holidayDiv.appendChild("div");
 
@@ -253,9 +266,6 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
                     aspernatur!
                   </p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                 </div>
               </div>
             </div>
